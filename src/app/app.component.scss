@@ -1,0 +1,134 @@
+.div-superpuesto{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 199;
+    width: 100%;
+    background-color: #5260ff;
+    animation: fade-out 10s ease-out forwards;
+}
+.div-splash{
+    --backgroud: none;
+    background: url('../../resources/splash.png') no-repeat center / cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 200;
+    animation: fade-out 10s ease-out forwards;
+}
+.figura-1{
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    left: 30%;
+    height: auto;
+    animation: fig1 10s;
+    z-index: 11;
+}
+.figura-2{
+    position: absolute;
+    width: 40%;
+    top: 25%;
+    left: 30%;
+    height: auto;
+    animation: fig2 10s;
+    z-index: 12;
+}
+.figura-3{
+    position: absolute;
+    width: 40%;
+    top: 25%;
+    left: 30%;
+    height: auto;
+    animation: fig3 10s;
+    z-index: 13;
+}
+@keyframes fig1{
+    from{
+        left: 150%;
+        top: 30%;
+    }20%{
+        left: 150%;
+        top: 30%;
+    }30%{
+        left: 30%;
+        top: 30%;
+    }40%{
+        left: 30%;
+        top: -50%;
+    }to{
+        left: 30%;
+        top: -50%;
+    }
+    
+}
+@keyframes fig2{
+    from{
+        top: -50%;
+        left: 30%;
+    }40%{
+        top: -50%;
+        left: 30%;
+    }50%{
+        top: 30%;
+        left: 30%;
+    }60%{
+        top: 30%;
+        left: -50%;
+    }to{
+        top: 30%;
+        left: -50%;
+    }
+}
+@keyframes fig3{
+    from{
+        left: -50%;
+        top: 30%;
+    }60%{
+        left: -50%;
+        top: 30%;
+    }70%{
+        left: 30%;
+        top: 30%;
+    }80%{
+        left: 150%;
+        top: 30%;
+    }to{
+        left: 150%;
+        top: 30%;
+    }
+}
+@keyframes fade-in-out{
+    from{
+        opacity: 1;
+    }80%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes fade-out{
+    from{
+        opacity: 1;
+    }80%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.fade-in{
+    opacity: 0;
+    animation: fade-in 2s ease-in forwards;
+    //background: url('../../resources/splash.png') no-repeat center / cover;
+}
+.fade-out{
+    opacity: 1;
+    animation: fade-out 2s ease-out forwards;
+}

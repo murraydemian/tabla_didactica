@@ -1,3 +1,10 @@
 <ion-app>
+  <div class={{divSuperpuesto}} [style.display]="splash ? 'flex' : 'none'">
+    <div class={{splashAnimation}}>
+      <img class="figura-1" src="../assets/tabla-figura-1.png" alt="signo +">
+      <img class="figura-2" src="../assets/tabla-figura-2.png" alt="palette">
+      <img class="figura-3" src="../assets/tabla-figura-3.png" alt="paw print">
+    </div>
+  </div>
   <ion-router-outlet></ion-router-outlet>
 </ion-app>

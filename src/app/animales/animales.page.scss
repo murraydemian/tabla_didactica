@@ -1,0 +1,68 @@
+.background-image{
+    --background: url('../../assets/tabla-background.png') no-repeat center / cover;
+  }
+  
+  #temas-container{  
+    --background: none;
+    --border-style: none;
+    #temas-orientation{
+      width: 90vw;
+    }
+    .temas-opt{
+      width: 90vw;
+      height: 22.9vh;
+      margin-left: 5vw;
+      margin-bottom: 15px;
+      .btn-img{
+        height: 90%;
+        width: auto;
+      }
+    }
+  }
+  #button-container{
+    --background: none;
+    --border-style: none;
+    .language-button{
+      --background: transparent;
+      --box-shadow: none;
+      height: 15vh;
+    }
+  }
+  #toolbar-container{
+    --border-style: none;
+  }
+  
+  @media (min-aspect-ratio: 10/9){
+    #temas-orientation{
+      display: grid;
+      grid-template-columns: 30vw 30vw 30vw;
+      height: 30vh;
+      column-gap: 3vw;
+      .temas-opt{
+        width: 30vw;
+        height: 40vh;
+        margin-left: 2vw;
+      }
+    }
+    
+    #button-container{
+      --background: none;
+      --border-style: none;
+      .language-button{
+        --background: transparent;
+        --box-shadow: none;
+        height: 25vh;
+      }
+    }
+    .temas-fab{
+      height: 10vh;
+      width: 95%;
+      left: 7%;
+    }
+    .temas-fab-opt{
+      width: 90vw;
+      height: 9vh;
+      margin-left: 10px;
+      margin-bottom: 5px;
+    }
+  }

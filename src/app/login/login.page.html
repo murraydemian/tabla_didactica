@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-item class="app-nav-bar">
+      <ion-img src="./assets/tabla-icono-transparente.png" class="nav-bar-image"></ion-img>
+      <ion-title>
+        Login
+      </ion-title>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-image">
+
+  <ion-card>
+    <p class="mensaje">{{mensaje}}</p>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-input type="email" accept="string" placeholder="Correo" [(ngModel)]="correo"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-input type="password" accept="string" placeholder="Clave" [(ngModel)]="clave"></ion-input>
+    </ion-item>
+  </ion-card> 
+  <ion-button expand="block" buttonType="button" (click)="login()" color="tertiary">ENTRAR</ion-button>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="tertiary">
+      <ion-icon name="code"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="login_Admin()"><ion-icon name="clipboard-outline"></ion-icon></ion-fab-button>
+      <ion-fab-button (click)="login_Invitado()"><ion-icon name="people-outline"></ion-icon></ion-fab-button>
+      <ion-fab-button (click)="login_Usuario()"><ion-icon name="person-outline"></ion-icon></ion-fab-button>
+      <ion-fab-button (click)="login_Anonimo()"><ion-icon name="happy-outline"></ion-icon></ion-fab-button>
+      <ion-fab-button (click)="login_Tester()"><ion-icon name="bug-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
